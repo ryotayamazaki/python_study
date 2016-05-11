@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<link rel="stylesheet" type="text/css" href="style.css">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<html lang="ja">
+<body>
+
+<form action="./cgi-bin/5_2.py" method="post">
+<p>
+店舗名：<input type="text" name="shop_name" size="40">
+</p>
+<p>
+場所：<input type="text" name="area" size="40">
+</p>
+<p>
+メニュー：<input type="text" name="menu_name" size="40">
+</p>
+<div onclick="obj=document.getElementById('more').style; obj.display=(obj.display=='none')?'block':'none';">
+<a style="cursor:pointer;">▼ 詳細設定</a>
+</div>
+<div id="more" style="display:none;clear:both;">
+<p>
+投稿日時：<input type="text" name="vote_date" size="5">日前まで検索
+</p>
+</div>
+
+<!--p>
+性別：<input type="radio" name="sex" value="male">男
+<input type="radio" name="sex" value="female">女
+</p>
+<p>
+血液型：<select name="blood">
+<option value="A">A型</option>
+<option value="B">B型</option>
+<option value="O">O型</option>
+<option value="AB">AB型</option>
+</select>
+</p>
+<p>
+ご感想：<br>
+<textarea name="kanso" rows="4" cols="40"></textarea>
+</p-->
+<p>
+<input type="submit" value="送信"><input type="reset" value="リセット">
+</p>
+</form>
+
+</body>
+</html>
